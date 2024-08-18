@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Blogging Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mainnavbar">
+        <div class="mainheading">
+            <h1 class="heading">Personal Blogging Site</h1>
+        </div>
+        <div class="navlinks">
+            <div class="navlinks1">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="home.html">Profile</a>
+            </div>
+            <div class="buttons">
+                <button class="signout" id="sign-in"><a href="signin.html">Sign In</a></button>
+                <button class="signout" id="sign-up"><a href="signup.html">Sign Up</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="form-container1">
+        <div class="form-container">
+            <h2 class="form-title">Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                <button type="submit" class="form-button">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="signin.html" class="form-link">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="scripts/signup.js"></script>
+</body>
+
+</html>

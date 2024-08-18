@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blogging Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mainnavbar">
+        <div class="mainheading">
+            <h1 class="heading">Dashboard</h1>
+        </div>
+        <div class="navlinks">
+            <div class="navlinks1">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="home.html">Profile</a>
+            </div>
+            <div class="buttons">
+                <button class="signout" id="sign-out">Sign Out</button>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="form-section">
+            <h2 class="section-title">Post a New Blog</h2>
+            <form id="newBlogForm">
+                <div class="form-group">
+                    <label for="title" class="form-label">Title:</label>
+                    <input type="text" id="title" name="title" class="form-input" required minlength="5" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="body" class="form-label">Body:</label>
+                    <textarea id="body" name="body" class="form-input" rows="4" required minlength="10"></textarea>
+                </div>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </section>
+
+        <section class="user-info-section">
+            <h2 class="section-title">User Information</h2>
+            <div id="userInfoDisplay" class="form-info">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name:</label>
+                    <div id="userNameDisplay" class="form-info-value">Loading...</div>
+                    <input type="text" id="editName" class="form-input" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <div id="userEmailDisplay" class="form-info-value">Loading...</div>
+                    <input type="email" id="editEmail" class="form-input" style="display: none;">
+                </div>
+            </div>
+            <button id="editUserInfoButton" class="form-button">Edit</button>
+            <button id="saveUserInfoButton" class="form-button" style="display: none;">Save</button>
+            <button id="cancelEditUserInfoButton" class="form-button" style="display: none;">Cancel</button>
+        </section>
+
+        <section class="blog-section">
+            <h2 class="section-title">Your Blogs</h2>
+            <div id="blog-list">
+            </div>
+        </section>
+
+        <section id="edit-section" class="form-section" style="display: none;">
+            <h2 class="section-title">Edit Blog</h2>
+            <form id="editBlogForm">
+                <div class="form-group">
+                    <label for="editTitle" class="form-label">Title:</label>
+                    <input type="text" id="editTitle" name="title" class="form-input" required minlength="5"
+                        maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="editBody" class="form-label">Body:</label>
+                    <textarea id="editBody" name="body" class="form-input" rows="4" required minlength="10"></textarea>
+                </div>
+                <input type="hidden" id="editBlogId">
+                <button type="submit" class="form-button">Update</button>
+                <button type="button" id="cancelEdit" class="form-button">Cancel</button>
+            </form>
+        </section>
+
+
+    </main>
+    <script type="module" src="scripts/home.js"></script>
+</body>
+
+</html>
