@@ -50,7 +50,6 @@
 
 .navlinks1 a:hover {
     color: white;
-    /* background-color: rgb(1, 75, 1); */
     background-color: #575757;
     border-radius: 5px;
     text-decoration: none;
@@ -62,30 +61,32 @@
 
 .signout {
     font-size: 18px;
-    width: 100px;
-    height: 43px;
     font-weight: 500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.096);
     background-color: #ff4d4d;
     color: #fff;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 43px;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.signout:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
 }
 
 .signout a {
     text-decoration: none;
     color: white;
+    padding: 10px 20px;
 }
 
 .signout a:hover {
     text-decoration: none;
     color: #333;
-}
-
-.signout:hover {
-    color: #333;
-    background-color: white;
 }
 
 .blogssection {
